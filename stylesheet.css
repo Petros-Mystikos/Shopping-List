@@ -56,14 +56,14 @@ li{
     padding: 10px;
     margin: 10px;
     background-color: #F2FFE9;
-    border-radius: 5%;
-    
+    border-radius: 5%; 
 }
 
 p{
     margin-left: 10px;
     font-size: 20px;
 }
+
 button{
     margin-left: auto;
     padding: 5px;
@@ -76,6 +76,4 @@ button{
 .clear{
     background-color: #FA7070;
     padding: 10px;
-
-
 }

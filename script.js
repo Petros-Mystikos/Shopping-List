@@ -2,6 +2,7 @@
 
 const shoppingList = document.querySelector(".shoppingList");
 const addBtn = document.querySelector('.add');
+const clearList = document.querySelector('.clear');
 const itemText = document.querySelector('input');
 itemText.focus();
 
@@ -53,4 +54,12 @@ function theMagic(){
 
     // focus the input box again
     itemText.focus();
+
+    // clear list
+    clearList.addEventListener('click', () =>{
+        while(shoppingList.hasChildNodes && shoppingList.firstElementChild !== null){
+            shoppingList.removeChild(shoppingList.firstElementChild);
+            console.log(shoppingList.firstElementChild)
+        }
+    })
 }
